@@ -1,18 +1,19 @@
-.personList-container {
-  display: flex;
-  flex-direction: column;
-}
-
 p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.personList-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
 }
 
 /* Style for the table header (thead) */
@@ -44,22 +45,42 @@ tr:nth-child(even) {
   background-color: #fff;
 }
 
-.save-btn {
+/* Style for buttons */
+.save-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn,
+.home-btn {
   margin: 5px;
 }
 
-.cancel-btn {
-  margin: 5px;
+/* Responsive styles */
+@media (max-width: 768px) {
+  .personList-container {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
 }
 
-.edit-btn {
-  margin: 5px;
-}
+@media (max-width: 480px) {
+  .personList-container {
+    padding: 5px;
+  }
 
-.delete-btn {
-  margin: 5px;
-}
+  table {
+    font-size: 12px;
+  }
 
-.home-btn{
-    margin-top: 5px;
+  th,
+  td {
+    padding: 6px;
+  }
 }
