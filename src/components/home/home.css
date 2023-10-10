@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Add this line to make sure the button appears at the bottom */
+    justify-content: flex-end; /* Add this line to align content at the bottom */
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color with transparency */
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    position: absolute; /* Position the button at the bottom */
+    bottom: 0; /* Position the button at the bottom */
+  }
+  
+  .person-btn {
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+  }
+  
