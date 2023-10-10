@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const hadleCLick = () => {
+  const hadlePersonList = () => {
     navigate("/PersonList");
   };
   return (
     <div>
-      <button onClick={hadleCLick}>PersonList</button>
+      <button onClick={hadlePersonList}>PersonList</button>
     </div>
   );
 };
